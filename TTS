@@ -1,0 +1,5 @@
+from gtts import gTTS
+from audioplayer import AudioPlayer
+tts = gTTS('Subscribe to yamps',lang='en')
+tts.save('tts.mp3')
+AudioPlayer("tts.mp3").play(block=True)
